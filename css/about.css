@@ -1,0 +1,211 @@
+
+.about-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about-map {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.typing {
+    display: inline-block;
+    font-size: 2rem; /* Adjust the font size */
+    font-weight: 600;
+    border-right: 3px solid #2563eb; /* The blinking cursor */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the part of text that’s not yet typed */
+    animation: typing 4s steps(24) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blinking caret effect */
+@keyframes blink-caret {
+    0%, 100% {
+        border-color: transparent; /* No caret */
+    }
+    50% {
+        border-color: #2563eb; /* Blink caret */
+    }
+}
+
+/* .skills-section{
+    margin-top: 300px;
+    
+}
+
+.skills-section h3{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+
+.skills-section ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+} */
+
+
+
+.sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 20px;
+}
+
+.section-box {
+  flex: 1 1 50%;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+  transform: translateY(-5px);
+}
+
+.section-box h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 8px;
+}
+
+.section-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section-box ul li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  color: #444;
+  font-size: 16px;
+}
+
+.section-box ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  padding: 10px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.resume-download:hover {
+  background-color: #0056b3;
+}
+
+.resume-download .material-symbols-outlined {
+  font-size: 20px; /* adjust as needed */
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+.dark-mode .about-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .skills-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+body.dark-mode .section-box {
+  background-color: #1e1e1e;
+  border-color: #444;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .section-box h3 {
+  color: #e4e4e4;
+  border-bottom-color: #66b2ff;
+}
+
+body.dark-mode .section-box ul li {
+  color: #ccc;
+}
+
+body.dark-mode .section-box ul li::before {
+  color: #66b2ff;
+}

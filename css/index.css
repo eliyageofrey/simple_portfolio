@@ -1,0 +1,129 @@
+/* styles.css */
+
+
+.welcome-container {
+    background-color: #2563eb; /* Apply background to full container */
+    height: 500px; /* Full screen height (optional) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 3rem; /* Adjust size as needed */
+    color: whitesmoke;
+    max-width: 80%; /* Wider text */
+}
+
+
+/* Typing effect */
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom; /* Fix alignment */
+    font-size: inherit; /* Match parent h1 */
+    line-height: inherit;
+    border-right: 3px solid whitesmoke;
+    animation: typing 2s steps(8, end), blink-caret 0.75s step-end infinite;
+}
+
+
+/* Typewriter animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 8ch; }
+}
+
+/* Blinking caret */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: whitesmoke; }
+}
+
+
+
+
+
+
+
+
+
+.features-section, .cta-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.features-section h2,
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .feature-card {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .feature-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+
+
+.dark-mode .cta-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .features-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
