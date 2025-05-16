@@ -1,9 +1,6 @@
-/* styles.css */
-
-
 .welcome-container {
-    background-color: #2563eb; /* Apply background to full container */
-    height: 500px; /* Full screen height (optional) */
+    background-color: #2563eb;
+    height: 500px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,26 +8,25 @@
 
 .welcome {
     text-align: center;
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem; 
     color: whitesmoke;
-    max-width: 80%; /* Wider text */
+    max-width: 80%; 
 }
 
 
-/* Typing effect */
+
 .typing {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    vertical-align: bottom; /* Fix alignment */
-    font-size: inherit; /* Match parent h1 */
+    vertical-align: bottom; 
+    font-size: inherit; 
     line-height: inherit;
     border-right: 3px solid whitesmoke;
     animation: typing 2s steps(8, end), blink-caret 0.75s step-end infinite;
 }
 
 
-/* Typewriter animation */
 @keyframes typing {
     from { width: 0; }
     to { width: 8ch; }

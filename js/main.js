@@ -1,13 +1,12 @@
-// Wait for navbar content to load, then attach toggle event
 const themeToggle = document.getElementById("toggle-theme");
 
-// Check local storage for saved preference
+
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark-mode");
   if (themeToggle) themeToggle.checked = true;
 }
 
-// Add event listener to toggle
+
 if (themeToggle) {
   themeToggle.addEventListener("change", function () {
   if (this.checked) {

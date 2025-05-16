@@ -46,9 +46,9 @@ body {
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between; /* Keep logo left and theme right */
+    justify-content: space-between; 
     align-items: center;
-    position: relative; /* Needed for absolute positioning of nav */
+    position: relative; 
 }
 
 .navbar-brand {
@@ -99,7 +99,7 @@ body {
 }
 
 
-/* Toggle Switch Styles */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -151,8 +151,6 @@ input:checked + .slider:before {
 }
 
 
-
-/* Dark mode overrides */
 .dark-mode .site-footer {
   background-color: #111;
   color: #eee;

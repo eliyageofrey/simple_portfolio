@@ -1,4 +1,3 @@
-
 .about-section {
     padding: 4rem 2rem;
     background-color: var(--bg-color);
@@ -35,15 +34,15 @@
 
 .typing {
     display: inline-block;
-    font-size: 2rem; /* Adjust the font size */
+    font-size: 2rem; 
     font-weight: 600;
-    border-right: 3px solid #2563eb; /* The blinking cursor */
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Hides the part of text that’s not yet typed */
+    border-right: 3px solid #2563eb;
+    white-space: nowrap; 
+    overflow: hidden; 
     animation: typing 4s steps(24) 1s forwards, blink-caret 0.75s step-end infinite;
 }
 
-/* Typewriter effect */
+
 @keyframes typing {
     from {
         width: 0;
@@ -53,31 +52,15 @@
     }
 }
 
-/* Blinking caret effect */
+
 @keyframes blink-caret {
     0%, 100% {
-        border-color: transparent; /* No caret */
+        border-color: transparent;
     }
     50% {
-        border-color: #2563eb; /* Blink caret */
+        border-color: #2563eb; 
     }
 }
-
-/* .skills-section{
-    margin-top: 300px;
-    
-}
-
-.skills-section h3{
-    font-size: 2.5rem;
-    color: var(--primary-color);
-}
-
-
-.skills-section ul {
-    list-style: disc;
-    margin-left: 1.5rem;
-} */
 
 
 
@@ -154,16 +137,9 @@
 }
 
 .resume-download .material-symbols-outlined {
-  font-size: 20px; /* adjust as needed */
+  font-size: 20px; 
   vertical-align: middle;
 }
-
-
-
-
-
-
-
 
 
 
@@ -185,7 +161,7 @@ body.dark-mode {
 }
 
 
-/* Dark mode styles */
+
 body.dark-mode {
   background-color: #121212;
   color: #e4e4e4;

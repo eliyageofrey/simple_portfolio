@@ -25,7 +25,7 @@ function validateForm(event) {
         return false;
     }
 
-    // Validate email format
+
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email)) {
         Swal.fire({
@@ -36,13 +36,12 @@ function validateForm(event) {
         return false;
     }
 
-    // Confirm successful submission and redirect
     Swal.fire({
         icon: 'success',
         title: 'Form Submitted',
         text: 'Your message has been sent!',
     }).then(() => {
-        // Reset form
+        
         document.getElementById("contact-form").reset();
     });
 }
